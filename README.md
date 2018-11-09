@@ -52,7 +52,7 @@ d.addCallback(handle_divvy_response)
 ## Building and testing
 
 ```bash
-pip install requirements.txt  # only needed in the build/test phase
+pip install -r requirements.txt  # only needed in the build/test phase
 find . -name "*.py" | xargs pycodestyle
 pylint -E *.py divvy tests
 python -m unittest discover tests/
